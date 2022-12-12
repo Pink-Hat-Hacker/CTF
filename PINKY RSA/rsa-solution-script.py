@@ -33,8 +33,9 @@ print(f"e: [{e}]")
 
 #step 5 encrypt
 c = pow(m,e,n)
-print(f"encrypted text: [{c}]")
+print(f"encrypted text: [{c}]\n\n")
 
+print("---------DECRYPTION-----------\n")
 #step 6 find d -- d * e mod phi = 1
 d = inverse(e, phi)
 print(f"d: [{d}]\n")
